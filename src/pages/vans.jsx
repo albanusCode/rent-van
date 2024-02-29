@@ -15,7 +15,7 @@ const Vans = () => {
   }, []);
   
   return (
-    <div className={`py-4 bg-orange-100 overflow-x-hidden`}>
+    <div className={`flex py-4 bg-[#FFF7ED] overflow-x-hidden max-w-[1300px] justify-center`}>
       <div className='relative mt-20 md:px-10 px-10'>
         <h1 className='text-3xl md:text-5xl md:p-8 font-semibold'>Explore Our Van Options</h1>
         <div className='flex justify-center gap-10 my-10 font-sans'>

@@ -5,7 +5,7 @@ import Image2 from '../assets/image2.jpg'
 
 const About = () => {
   return (
-    <section class="py-4 md:px-16 bg-orange-100">
+    <section class="py-4 max-w-[1300px] md:px-16 bg-orange-100">
       <div class="container px-4 mx-auto">
           <div className='bg-white rounded-lg sm:mb-0 mb-10'>
             <h1 class="text-3xl md:text-5xl font-semibold mb-6 mt-14 max-w-lg lg:max-w-3xl px-10 pt-10">On a mission to make Adventure fun</h1>

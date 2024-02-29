@@ -4,7 +4,7 @@ import Button from './components/button';
 
 function App() {
   return (
-    <section className='relative h-screen overflow-hidden'>
+    <section className='relative max-w-[1200px] h-screen overflow-hidden'>
       <div className='flex justify-center items-center h-screen top-0 relative'>
         <img
           src="https://images.unsplash.com/photo-1566847286022-786addefb683?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <div className='relative w-full'>
-            <nav className='absolute mb-4 flex w-full justify-between sm:px-20 px-10 items-center z-10 h-16 top-0'>
+            <nav className='absolute max-w-[1300px] mb-4 flex w-full justify-between sm:px-20 px-10 items-center z-10 h-16 top-0'>
                 <Link to='/' className='text-white font-bold bg-'>
                     <img src={logo} alt="" className='w-[32px]'/>
                     <h2 className={`${location.pathname === '/' ? 'text-gray-300 font-semibold' : 'font-normal text-black'}`}>Rentvans</h2>
