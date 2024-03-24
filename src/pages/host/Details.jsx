@@ -1,14 +1,8 @@
-import React, {useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom';
+import React from 'react'
+import { useOutletContext } from 'react-router-dom';
 
 const Details = () => {
-  const params = useParams();
-    const [van, setVan] = useState(null);
-    useEffect(() => {
-        fetch(`/api/host/vans/${params.id}`)
-        .then(response => response.json())
-        .then(data => setVan(data.vans));
-    }, [params.id]);
+  const { van } = useOutletContext();
   return (
     <div className='flex flex-col'>
         {van ? (
