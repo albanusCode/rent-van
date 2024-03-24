@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/about/about.jsx'
+import Price from './pages/host/Price.jsx';
 import Vans from './pages/vans/vans.jsx'
 import HostVanDetail from './pages/host/HostVanDetail.jsx';
 import Dashboard from './pages/host/Dashboard.jsx';
@@ -12,6 +13,7 @@ import HostLayout from './components/HostLayout.jsx';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx'
 import Details from './pages/host/Details.jsx';
+import Photos from './pages/host/Photos.jsx';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="Reviews" element={<Reviews />} />
             <Route path="vans/:id" element={<HostVanDetail />}>
               <Route index element={<Details/>}/>
+              <Route path='photos' element={<Photos/>}/>
+              <Route path='price' element={<Price/>}/>
             </Route>
           </Route>
         </Route>

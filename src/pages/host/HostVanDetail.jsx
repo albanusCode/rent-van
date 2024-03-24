@@ -15,7 +15,7 @@ const HostVanDetail = () => {
     console.log(van);
     return (
         <div className='text-gray-800 sm:px-20 px-8 bg-orange-50 max-w-[1300px]'>
-            <Link to={'/host/vans/'} className='hover:underline flex items-center gap-2'>
+            <Link to={'..' } relative="path" className='hover:underline flex items-center gap-2'>
                 <ArrowLeft size={20}/><span className=''>Back to all vans</span>
             </Link>
             {van !== null ? (
@@ -30,7 +30,7 @@ const HostVanDetail = () => {
                             <p className='text-gray-600 text-lg md:text-xl'>${van.price}/day</p>
                         </div>
                     </div>
-                    <div className='flex justify-center'>
+                    <div>
                         <HostVanDetailLayout/>
                     </div>
                 </>

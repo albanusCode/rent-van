@@ -10,26 +10,26 @@ const HostLayout = () => {
     <>
     <nav className='flex px-4 py-20 gap-10 bg-[#FFF7ED] overflow-x-hidden max-w-[1300px] justify-center'>
       <NavLink
-        to="/host"
+        to="."
         end
         style={({ isActive }) => isActive ? activeStyle : undefined}
       >
         Dashboard
       </NavLink>
       <NavLink
-        to="/host/Income"
+        to="Income"
         style={({ isActive }) => isActive ? activeStyle : undefined}
       >
         Income
       </NavLink>
       <NavLink
-        to="/host/vans"
+        to="vans"
         style={({ isActive }) => isActive ? activeStyle : undefined}
       >
         Vans
       </NavLink>
       <NavLink
-        to="/host/Reviews"
+        to="Reviews"
         style={({ isActive }) => isActive ? activeStyle : undefined}
       >
         Reviews

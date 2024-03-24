@@ -18,7 +18,7 @@ const HostVanDetailLayout = () => {
   return (
     <>
     {van !== null ? (
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col gap-4'>
           <nav className='flex px-4 gap-10 bg-[#FFF7ED] overflow-x-hidden max-w-[1300px] justify-center'>
             <NavLink
               to={`/host/vans/${van.id}`}
@@ -28,20 +28,20 @@ const HostVanDetailLayout = () => {
               Details
             </NavLink>
             <NavLink
-              to="/host/Income"
+              to={`/host/vans/${van.id}/price`}
               style={({ isActive }) => isActive ? activeStyle : undefined}
             >
               Pricing
             </NavLink>
             <NavLink
-              to="/host/vans"
+              to={`/host/vans/${van.id}/photos`}
               end
               style={({ isActive }) => isActive ? activeStyle : undefined}
             >
               Photos
             </NavLink>
           </nav>
-          <div className='sm:px-0 px-4'>
+          <div className='flex gap-10 bg-[#FFF7ED] overflow-x-hidden max-w-[1300px] justify-center'>
           <Outlet/>
           </div>
         </div>
